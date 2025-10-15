@@ -1,0 +1,158 @@
+
+body{
+    padding: 0;
+    margin: 0;
+}
+.img1{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+.surname{
+    input{
+        height: 40px;
+        width: 800px;
+        border: solid 2px ;
+        border-radius: 10px;
+    }
+}
+.name{
+    input{
+        height: 40px;
+        width: 800px;
+        border: solid 2px ;
+        border-radius: 10px;
+        
+    }
+}
+.phone{
+    input{
+        height: 40px;
+        width: 800px;
+        border: solid 2px ;
+        border-radius: 10px;
+    }
+}
+.section1{
+    input{
+        margin-left: 680px;
+    }
+}
+.section2{
+    input{
+        margin-left: 673px;
+    }
+}
+.fourmulair{
+    height: 100%;
+    font-size: 20px;
+    margin-top: 60px;
+    margin-left: 10%;
+    position: absolute;
+}
+.envoier input{
+    background-color: #FFD500;
+    font-size: 20px;
+    width: 120px;
+    height: 40px;
+    margin-left: 690px;
+    border-radius: 10px;
+    border: none;
+}
+@media (max-width: 950px)  {
+    .surname{
+    input{
+        width: 650px;
+    }
+}
+.name{
+    input{
+        width: 650px;
+    }
+}
+.phone{
+    input{
+        width: 650px;
+    }
+}
+.section1{
+    input{
+        margin-left: 450px;
+    }
+}
+.section2{
+    input{
+        margin-left: 450px;
+    }
+}
+.envoier input{
+    margin-left: 540px;
+
+}
+
+}
+@media (max-width: 790px)  {
+    .surname{
+    input{
+        width: 450px;
+    }
+}
+.name{
+    input{
+        width: 450px;
+    }
+}
+.phone{
+    input{
+        width: 450px;
+    }
+}
+.section1{
+    input{
+        margin-left: 300px;
+    }
+}
+.section2{
+    input{
+        margin-left: 300px;
+    }
+}
+.envoier input{
+    margin-left: 340px;
+
+}
+
+}
+@media (max-width: 570px)  {
+    .surname{
+    input{
+        width: 250px;
+    }
+}
+.name{
+    input{
+        width: 250px;
+    }
+}
+.phone{
+    input{
+        width: 250px;
+    }
+}
+.section1{
+    input{
+        margin-left: 140px;
+    }
+}
+.section2{
+    input{
+        margin-left: 135px;
+    }
+}
+.envoier input{
+    margin-left: 150px;
+
+}
+
+}

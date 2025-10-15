@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/coiffure-homme.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="coiffure">
+  <img src="/img/Group 2.png" alt="" class="img1">
+
+  <form class="fourmulair" id="whatsappForm">
+    <div class="surname">
+      <label>اللقب</label><br>
+      <input type="text" id="surname" required>
+      <br><br>
+    </div>
+
+    <div class="name">
+      <label>الاسم</label><br>
+      <input type="text" id="name" required><br><br>
+    </div>
+
+    <div class="phone">
+      <label>رقم الهاتف</label><br>
+      <input type="number" id="phone" required><br><br><br><br>
+    </div>
+
+    <div class="section1">
+      <label>التدريب العادي
+        <input type="radio" name="formation" value="التدريب العادي">
+      </label>
+      <br><br>
+    </div>
+
+    <div class="section2">
+      <label>التدريب التأهيلي
+        <input type="radio" name="formation" value="التدريب التأهيلي">
+      </label>
+    </div>
+
+    <br><br><br><br><br>
+
+    <div class="envoier">
+      <input type="submit" value="أرسل">
+    </div>
+    <br><br>
+  </form>
+</div>
+
+    <script>
+  document.getElementById("whatsappForm").addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    // جلب القيم من الحقول
+    let surname = document.getElementById("surname").value.trim();
+    let name = document.getElementById("name").value.trim();
+    let phone = document.getElementById("phone").value.trim();
+
+    // نتحقق من نوع التدريب
+    let formation = document.querySelector('input[name="formation"]:checked');
+    if (!formation) {
+      alert("من فضلك اختر نوع التدريب ✋");
+      return;
+    }
+
+    let typeFormation = formation.value;
+
+    // رقم واتسابك (بدون +)
+    let yourPhone = "2130664142521"; // ⚠️ بدليه برقمك
+
+    // نص الرسالة
+    let text = `📋 تسجيل جديد:%0A👤 اللقب: ${surname}%0A🧍‍♀️ الاسم: ${name}%0A📞 رقم الهاتف: ${phone}%0A🎓 نوع التدريب: ${typeFormation}`;
+
+    // فتح واتساب بالرابط
+    window.open(`https://wa.me/${yourPhone}?text=${text}`, "_blank");
+  });
+</script>
+
+</body>
+</html>
